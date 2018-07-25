@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+
+.thePage{
+  background-color: PaleGreen;
+}
+.theFace {
+  width: 100%;
+  justify-content: center;
+  margin-top: 80px;
+  background-color: transparent;
+  animation-name: terriSpin;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+
+}
+.container {
+  display: grid;
+  background: PaleGreen;
+  margin: auto;
+  height: 40%;
+  width: 40%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 50px 50px;
+}
+@keyframes terriSpin {
+  25%{
+    transform: rotate(180deg) scale(0.5) translateY(200%);
+
+  }
+  50%{
+    transform: rotate(360deg) scale(1) translateY(100%);
+
+}
+  75%{
+    transform: rotate(180deg) scale(0.5);
+  }
+  100%{
+      transform: rotate(0deg) scale(1);
+    }
+
+}
+</style>
+
+
+<div class="thePage">
+  <div class="container">
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png">
+    </div>
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png">
+    </div>
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png">
+    </div>
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png">
+    </div>
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png">
+    </div>
+    <div>
+      <img class="theFace" src="/Users/vincentdomenick/Desktop/Terri Face.png"></div>
+  </div>
+</div>
